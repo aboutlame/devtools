@@ -11,5 +11,6 @@ public class ProgressDemo {
             System.out.println("Status: backlog first");
         }
         System.out.println("feature/DVT-3");
+        System.out.println("+ feature/DVT-4");
     }
 }
