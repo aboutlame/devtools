@@ -6,7 +6,7 @@ public class ProgressDemo {
 
     System.out.println(dmitryTimoshenko.summary());
     if (dmitryTimoshenko.readyForSprint()) {
-        System.out.println("Status: sprint ready");
+      System.out.println("Status: sprint ready");
     } else {
       System.out.println("Status: backlog first");
     }
