@@ -1,5 +1,7 @@
 # Mentee Power
 
+[![Java CI with CheckStyle and JaCoCo](https://github.com/aboutlame/devtools/actions/workflows/ci.yml/badge.svg)](https://github.com/aboutlame/devtools/actions/workflows/ci.yml)
+
 Учебный Java-проект для демонстрации базовой структуры приложения, работы с пакетами и простой бизнес-логики.
 
 ---
