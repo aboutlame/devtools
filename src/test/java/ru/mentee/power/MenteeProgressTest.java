@@ -1,30 +1,30 @@
 package ru.mentee.power;
 
-import org.junit.jupiter.api.Test;
-
 import static org.assertj.core.api.Assertions.assertThat;
 
+import org.junit.jupiter.api.Test;
+
 class MenteeProgressTest {
-    @Test
-    void shouldFormatSummary_whenProgressCreated() {
-        MenteeProgress progress = new MenteeProgress("Дима", 1, 8);
+  @Test
+  void shouldFormatSummaryWhenProgressCreated() {
+    MenteeProgress progress = new MenteeProgress("Дима", 1, 8);
 
-        String result = progress.summary();
+    String result = progress.summary();
 
-        assertThat(result).isEqualTo("Sprint 1 → Дима: planned 8 h");
-    }
+    assertThat(result).isEqualTo("Sprint 1 → Дима: planned 8 h");
+  }
 
-    @Test
-    void shouldDetectReadiness_whenHoursAboveThreshold() {
-        MenteeProgress progress = new MenteeProgress("Дмитрий", 3, 5);
+  @Test
+  void shouldDetectReadinessWhenHoursAboveThreshold() {
+    MenteeProgress progress = new MenteeProgress("Дмитрий", 3, 5);
 
-        assertThat(progress.readyForSprint()).isTrue();
-    }
+    assertThat(progress.readyForSprint()).isTrue();
+  }
 
-    @Test
-    void shouldDetectLackOfReadiness_whenHoursBelowThreshold() {
-        MenteeProgress progress = new MenteeProgress("Димас", 2, 2);
+  @Test
+  void shouldDetectLackOfReadinessWhenHoursBelowThreshold() {
+    MenteeProgress progress = new MenteeProgress("Димас", 2, 2);
 
-        assertThat(progress.readyForSprint()).isFalse();
-    }
+    assertThat(progress.readyForSprint()).isFalse();
+  }
 }
