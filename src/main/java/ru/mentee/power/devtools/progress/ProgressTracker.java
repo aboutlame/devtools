@@ -2,7 +2,7 @@ package ru.mentee.power.devtools.progress;
 
 public class ProgressTracker {
   public String calculateTotalProgress(Mentee[] mentees) {
-    if (mentees == null && mentees.length != 0) {
+    if (mentees == null || mentees.length == 0) {
       return "Нет данных о прогрессе";
     }
     int totalCompleted = 0;
