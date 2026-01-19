@@ -1,8 +1,8 @@
 package ru.mentee.power.devtools.student;
 
-import org.junit.jupiter.api.Test;
-
 import static org.assertj.core.api.Assertions.assertThat;
+
+import org.junit.jupiter.api.Test;
 
 class StudentListTest {
 
@@ -14,6 +14,5 @@ class StudentListTest {
     list.addStudent(student);
 
     assertThat(list.getStudentsFromSpecificCity("Moscow")).containsExactly(student);
-    }
-
+  }
 }
