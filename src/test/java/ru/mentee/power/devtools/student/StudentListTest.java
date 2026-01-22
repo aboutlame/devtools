@@ -8,7 +8,7 @@ class StudentListTest {
 
   @Test
   void shouldAddStudentsIfNotNull() {
-    Student student = new Student("Dima", "Moscow");
+    Student student = new Student("Dima", "Moscow", "pala@gmail.com");
     StudentList list = new StudentList();
 
     list.addStudent(student);
