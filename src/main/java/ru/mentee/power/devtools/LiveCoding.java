@@ -1,15 +1,6 @@
 package ru.mentee.power.devtools;
 
 public class LiveCoding {
-  public static void main(String[] args) {
-    printFizzBuzz(15);
-    System.out.println(findMax(new int[] {3, 7, 2, 9, 1}));
-    System.out.println(findMax(new int[] {-5, -1, -10}));
-    System.out.println(findMax(new int[] {42}));
-    System.out.println(findMax(new int[] {}));
-    System.out.println(sumEven(new int[] {}));
-    System.out.println(sumEven(new int[] {1, 2, 3, 4, 5, 6}));
-  }
 
   public static void printFizzBuzz(int n) {
     for (int i = 1; i <= n; i++) {
